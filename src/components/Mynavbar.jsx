@@ -6,7 +6,6 @@ const Mynavbar = () => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        {/* Toggle con icona personalizzata */}
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <GiHamburgerMenu color="red" size={30} />
         </Navbar.Toggle>
