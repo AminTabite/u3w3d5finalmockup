@@ -1,6 +1,6 @@
 import { Container, Navbar, Nav } from "react-bootstrap";
 import { GiHamburgerMenu } from "react-icons/gi"; // import icona
-import logomusic from "../assets2/logos/music.svg";
+import logomusic from "../assets2/logos/download.svg";
 
 const Mynavbar = () => {
   return (

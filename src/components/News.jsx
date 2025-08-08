@@ -7,9 +7,9 @@ const News = () => {
   return (
     <>
       <Container>
-        <h1>Novitá</h1>
         <Row className="justify-content-center align-content-center g-2">
-          <Col xs={6} lg={4}>
+          <h1>Novitá</h1>
+          <Col xs={6} lg={4} className="d-flex flex-grow-1">
             <div className="h-100 d-flex flex-column">
               <div>
                 <h6>Nuova stazione radio</h6>
@@ -25,7 +25,7 @@ const News = () => {
             </div>
           </Col>
 
-          <Col xs={6} lg={4}>
+          <Col xs={6} lg={4} className="d-flex flex-grow-1">
             <div className="h-100 d-flex flex-column">
               <div>
                 <h6>Nuova stazione radio</h6>
