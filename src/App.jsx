@@ -7,6 +7,7 @@ import Newradioepisodes from "./components/Newradioepisodes.jsx";
 import Newsongs from "./components/Newsongs.jsx";
 import Explore from "./components/explore.jsx";
 import Footer from "./components/Footer.jsx";
+import Playerbasso from "./components/Playerbasso.jsx";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             </Row>
           </div>
           <Footer />
+          <Playerbasso />
         </Col>
       </Row>
     </Container>
