@@ -81,7 +81,7 @@ const Newradioepisodes = () => {
               fluid
               style={{ height: "200px", width: "200px", objectFit: "cover" }}
             />
-            <h5 className="mt-2">Idk</h5>
+            <h5 className="mt-2">Travis Mills!</h5>
           </div>
         </Col>
       </Row>
