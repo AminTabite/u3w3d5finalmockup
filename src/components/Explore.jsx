@@ -4,6 +4,7 @@ import Alert from "react-bootstrap/Alert";
 const Explore = () => {
   return (
     <Container>
+      <h1>Altro da esplorare</h1>
       <Row>
         <Col xs={12} lg={4}>
           {" "}

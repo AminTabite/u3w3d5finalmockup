@@ -10,41 +10,39 @@ import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
-    <>
-      <Container>
-        {/* */}
-        <Row className="d-flex flex-column d-lg-flex flex-row">
-          <Col xs={12} lg={2}>
-            <Mynavbar />
-          </Col>
-          <Col xs={12} lg={10}>
-            <Col>
-              <h2>Novitá</h2>
-              <News />
-            </Col>
-            <Col>
-              <h2>
-                Nuovi Episodi Radio <span>{">"}</span>
-              </h2>
-              <Newradioepisodes />
-            </Col>
-            <Col>
-              <h2>
-                Nuove Canzoni <span>{">"}</span>
-              </h2>
-              <Newsongs />
-            </Col>
-            <Col>
-              <h2>Altro da esplorare</h2>
-              <Explore />
-            </Col>
-            <Col>
-              <Footer />
-            </Col>
-          </Col>
-        </Row>
-      </Container>
-    </>
+    <Container fluid className="h-100">
+      <Row className="h-100">
+        <Col xs={12} lg={2} className="greybg d-flex flex-column">
+          <Mynavbar />
+        </Col>
+
+        <Col xs={12} lg={10} className="d-flex flex-column">
+          <div className="flex-grow-1 overflow-auto">
+            <Row>
+              <Col xs={12}>
+                <News />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12}>
+                <Newradioepisodes />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12}>
+                <Newsongs />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12}>
+                <Explore />
+              </Col>
+            </Row>
+          </div>
+          <Footer />
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

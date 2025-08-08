@@ -34,17 +34,26 @@ const Newsongs = () => {
 
   return (
     <Container>
+      <h1>
+        Nuove uscite <span>{">"}</span>
+      </h1>
       {error && (
         <p className="text-danger">
           Errore nel caricamento delle canzoni, ricarica la pagina.
         </p>
       )}
 
-      <Row>
+      <Row className="g-1 justify-content-evenly flex-grow-1">
         {songs.slice(0, 12).map((song) => (
-          <Col key={song.id} xs={4} lg={2}>
-            <Card>
-              <Card.Img variant="top" src={song.artist.picture_medium} />
+          <Col key={song.id} xs={4} lg={2} className="p-1">
+            <Card className="h-100">
+              <div>
+                <Card.Img
+                  variant="top"
+                  className="imgcardfetch"
+                  src={song.artist.picture_medium}
+                />
+              </div>
               <Card.Body>
                 <Card.Title>{song.title}</Card.Title>
                 <Card.Text>{song.artist.name}</Card.Text>

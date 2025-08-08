@@ -2,7 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <Container>
+    <Container fluid className="greybg footer">
       <Row>
         <Col xs={12} lg={6}>
           <Col className="my-3">
